@@ -7,6 +7,11 @@ const GROUND_HEIGHT = -50; // A Constant to store the ground height of the game.
 function Terrain() {
     const terrain = useRef(null);
 
+    useFrame(() => {
+        const position = terrain?.current?.position;
+        position.z += 0.4;
+    });
+
     return (
         <mesh
             visible

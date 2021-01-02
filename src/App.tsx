@@ -3,9 +3,8 @@ import Target from "environment/hud/target";
 import Terrain from "environment/terrain";
 import Loading from "objects/ArWing/Loading";
 import React, { Suspense } from "react";
-import { Canvas } from "react-three-fiber";
 import ArWing from './objects/ArWing';
-import { RecoilRoot, useRecoilBridgeAcrossReactRoots_UNSTABLE } from "recoil";
+import { RecoilRoot } from "recoil";
 
 import "./styles.css";
 import Lasers from "environment/lasers";
@@ -13,18 +12,9 @@ import LaserController from "controllers/laser-controller";
 import Enemies from "objects/Enemy/asteroid";
 import GameTimer from "gameTimer";
 import ScoreCard from "environment/hud/score-card";
+import RecoilCanvas from "components/recoil-canvas";
+import SkyBox from "environment/sky-box";
 
-const RecoilCanvas = ({ children, ...props}) => {
-  const RecoilBridge = useRecoilBridgeAcrossReactRoots_UNSTABLE();
-
-  return (
-    <Canvas {...props}>
-      <RecoilBridge>
-        {children}
-      </RecoilBridge>
-    </Canvas>
-  );
-}
 
 export default function App() {
   return (
@@ -36,9 +26,9 @@ export default function App() {
           <Suspense fallback={<Loading />}>
             <ArWing />
           </Suspense>
-          <Terrain />
           <Target />
           <Lasers />
+          <SkyBox />
           <LaserController />
           <Enemies />
           <GameTimer />

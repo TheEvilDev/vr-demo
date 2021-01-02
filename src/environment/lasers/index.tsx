@@ -9,8 +9,8 @@ function Lasers() {
       <group>
         {lasers.map((laser) => (
           <mesh position={[laser.x, laser.y, laser.z]} key={`${laser.id}`}>
-            <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-            <meshStandardMaterial attach="material" emissive={new Color("white")} wireframe />
+            <cylinderBufferGeometry attach="geometry" args={[2, 2, 17, 20, 4, false, 90]} />
+            <meshStandardMaterial attach="material" emissive={new Color("red")} />
           </mesh>
         ))}
       </group>
