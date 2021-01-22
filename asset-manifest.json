@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/space-fighter/static/css/main.b6b88415.chunk.css",
+    "main.js": "/space-fighter/static/js/main.61420b28.chunk.js",
+    "main.js.map": "/space-fighter/static/js/main.61420b28.chunk.js.map",
+    "runtime-main.js": "/space-fighter/static/js/runtime-main.2f09db5a.js",
+    "runtime-main.js.map": "/space-fighter/static/js/runtime-main.2f09db5a.js.map",
+    "static/js/2.340cea0e.chunk.js": "/space-fighter/static/js/2.340cea0e.chunk.js",
+    "static/js/2.340cea0e.chunk.js.map": "/space-fighter/static/js/2.340cea0e.chunk.js.map",
+    "static/js/3.40f1b6df.chunk.js": "/space-fighter/static/js/3.40f1b6df.chunk.js",
+    "static/js/3.40f1b6df.chunk.js.map": "/space-fighter/static/js/3.40f1b6df.chunk.js.map",
+    "index.html": "/space-fighter/index.html",
+    "static/css/main.b6b88415.chunk.css.map": "/space-fighter/static/css/main.b6b88415.chunk.css.map",
+    "static/js/2.340cea0e.chunk.js.LICENSE.txt": "/space-fighter/static/js/2.340cea0e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f09db5a.js",
+    "static/js/2.340cea0e.chunk.js",
+    "static/css/main.b6b88415.chunk.css",
+    "static/js/main.61420b28.chunk.js"
+  ]
+}
